@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://st5.depositphotos.com/1007027/64424/i/450/depositphotos_644246350-stock-photo-beautiful-woman-red-evening-dress.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.back-button {
+    margin-top: 20px;
+    background-color: #2196F3;
+}
+
+.back-button:hover {
+    background-color: #1976D2;
+}
+
+.edit-button {
+    background-color: #FFC107;
+}
+
+.edit-button:hover {
+    background-color: #FFA000;
+}
+
+.icon {
+    margin-right: 8px;
+}

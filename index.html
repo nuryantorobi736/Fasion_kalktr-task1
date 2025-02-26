@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Baju</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="formContainer" class="container">
+        <h1><i class="fas fa-tshirt icon"></i> Form Pemesanan Baju</h1>
+        <label for="tanggal">Tanggal:</label>
+        <input type="text" id="tanggal" readonly>
+
+        <label for="ukuranTangan"><i class="fas fa-hand-paper icon"></i> Ukuran Tangan (cm):</label>
+        <input type="number" id="ukuranTangan" placeholder="Masukkan ukuran tangan" required>
+
+        <label for="ukuranPinggang"><i class="fas fa-socks icon"></i> Ukuran Pinggang (cm):</label>
+        <input type="number" id="ukuranPinggang" placeholder="Masukkan ukuran pinggang" required>
+
+        <label for="ukuranDada"><i class="fas fa-user icon"></i> Ukuran Lingkar Dada (cm):</label>
+        <input type="number" id="ukuranDada" placeholder="Masukkan ukuran lingkar dada" required>
+
+        <label for="panjangBaju"><i class="fas fa-ruler-vertical icon"></i> Panjang Baju dari Pinggang (cm):</label>
+        <input type="number" id="panjangBaju" placeholder="Masukkan panjang baju" required>
+
+        <label for="panjangPundak"><i class="fas fa-ruler-vertical icon"></i> Panjang Pundak ke Pinggang (cm):</label>
+        <input type="number" id="panjangPundak" placeholder="Masukkan panjang pundak" required>
+
+        <label for="jenisKain"><i class="fas fa-fabric icon"></i> Jenis Kain:</label>
+        <select id="jenisKain">
+            <option value="katun">Katun</option>
+            <option value="linen">Linen</option>
+            <option value="satin">Satin</option>
+            <option value="denim">Denim</option>
+            <option value="polyester">Polyester</option>
+        </select>
+
+        <label for="jenisBaju"><i class="fas fa-tshirt icon"></i> Jenis Baju:</label>
+        <select id="jenisBaju">
+            <option value="kemeja">Kemeja</option>
+            <option value="kaos">Kaos</option>
+            <option value="blus">Blus</option>
+            <option value="jaket">Jaket</option>
+            <option value="gaun">Gaun</option>
+        </select>
+
+        <label for="rincianBaju"><i class="fas fa-pencil-alt icon"></i> Rincian Baju (Manual):</label>
+        <textarea id="rincianBaju" rows="4" placeholder="Masukkan rincian baju di sini..."></textarea>
+
+        <button id="submit"><i class="fas fa-paper-plane icon"></i> Kirim Pemesanan</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <div id="tabelContainer" class="container" style="display: none;">
+        <h1><i class="fas fa-list icon"></i> Data Pesanan Baju</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Ukuran Tangan</th>
+                    <th>Ukuran Pinggang</th>
+                    <th>Ukuran Dada</th>
+                    <th>Panjang Baju</th>
+                    <th>Panjang Pundak</th>
+                    <th>Jenis Kain</th>
+                    <th>Jenis Baju</th>
+                    <th>Rincian Baju</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="pesananBody"></tbody>
+        </table>
+        <button class="back-button" id="backToForm"><i class="fas fa-arrow-left icon"></i> Kembali ke Form Pemesanan</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
